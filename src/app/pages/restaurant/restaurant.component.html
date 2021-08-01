@@ -1,0 +1,18 @@
+ 
+   <div class="row restaurants">
+      <div class="col-xs-12 content">
+         <h1 class="heading-sub">Order Your Best food anytime.</h1>
+         <h2 class="heading-restaurant heading">Restaurants in <span class="city-pill">{{stateName}}</span></h2>
+         <p class="intro-paragraph">Choose your meal from amazing restaurants in
+             the beautiful city of {{stateName}}
+         </p>
+      </div>
+         <div class="col-md-4 " *ngFor="let serviceProvide of serviceProvider">
+            <app-restaurant-item providerId="{{serviceProvide.id}}"
+                                 name="{{serviceProvide.restaurantName}}"
+                                 logoUrl="{{serviceProvide.logoUrl}}"></app-restaurant-item>
+         </div>
+   </div>
+
+
+

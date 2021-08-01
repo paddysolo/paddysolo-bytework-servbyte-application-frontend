@@ -1,0 +1,13 @@
+<div class="sidebar-left">
+   <h1 class="compant-name" >
+      <a [routerLink]="[ '/food' ]">Serve Byte 
+         <span>Inc</span></a></h1>
+   <h2 class="services">Our Services</h2>
+   <div class="services">
+      <ul>
+         <li *ngFor="let service of services" >
+            <a [ngClass]="{'is-active' : service.name == 'food'}" >{{service.name | titlecase}}</a>
+         </li>
+      </ul>
+   </div>
+</div>

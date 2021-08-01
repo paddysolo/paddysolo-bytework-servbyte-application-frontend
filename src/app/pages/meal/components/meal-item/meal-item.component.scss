@@ -1,0 +1,57 @@
+.meal-card {
+   border-radius: 5px;
+}
+
+
+.content {
+   padding: 10px;
+   padding-top: 4rem;
+   position: relative;
+}
+.price-pill {
+   position: absolute;
+   top: 0;
+   right: 0;
+   color: #fff;
+   background-color: #fc8969;
+   padding:10px;
+}
+.meal-name {
+   font-size: 2rem;
+   font-weight: 800;
+   font-family: 'Poppins', sans-serif;
+
+}
+.meal-description {
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: 400;
+   color: #333;
+}
+.order-meal-btn {
+  background-color: #fc8969;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 10px 10px 10px;
+}
+
+.order-now-btn {
+   margin-top: 10px;
+   background-color: #fc8969 !important;
+   border: none !important;
+   color: #fff;
+}
+
+.meal-img {
+   height: 300px !important;
+}
+
+.modal-title {
+   font-size: 2rem;
+   font-weight: 800;
+   
+}
+
+.modal-body h3 {
+   font-size: 18px;
+}

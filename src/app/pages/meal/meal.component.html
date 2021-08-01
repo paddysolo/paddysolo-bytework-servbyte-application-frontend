@@ -1,0 +1,25 @@
+ 
+   <div class="row meal">
+      <div class="col-xs-12 content">
+         <h1 class="heading-sub">Order Your Best food anytime.</h1>
+         <h2 class="heading-meal heading">Meals offered by <span class="city-pill">{{providerName}}</span></h2>
+         <p class="intro-paragraph">Choose your meal from the assorted list
+         </p>
+      </div>
+      <div class="col-xs-12 menus">
+         Our Menus
+      </div>
+         <div class="col-md-12 meal-cards" *ngFor="let meal of mealsByProvider" >
+            <app-meal-item mealId="{{meal.id}}"
+            mealName="{{meal.mealName}}"
+            pictureUrl="{{meal.pictureUrl}}"
+            price = "{{meal.price}}"
+            preparationTime = {{meal.preparationTime}}
+            description = {{meal.description}}></app-meal-item>
+         </div>
+        
+   
+   </div>
+
+
+

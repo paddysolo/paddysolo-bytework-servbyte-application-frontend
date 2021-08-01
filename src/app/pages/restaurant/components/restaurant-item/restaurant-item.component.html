@@ -1,0 +1,8 @@
+<div class="card restaurant-card">
+   <img class="img-fluid restaurant-logo"   src={{logoUrl}} alt="restaurant-logo">
+   <div class="content">
+      <h2 class="restaurant-name">{{name}}</h2>
+      <button class="btn select-restaurant-btn" [routerLink]="['/restaurants/meal']"
+      [queryParams]="{ provider_id: providerId }">Select</button>
+   </div>
+</div>

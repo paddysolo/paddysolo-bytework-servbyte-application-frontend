@@ -1,0 +1,49 @@
+<div class="card meal-card">
+ <div class="row">
+   <div class="col-xs-12 col-md-4">
+      <div class="meal-img-con">
+         <img class="img-fluid meal-img"   src={{pictureUrl}} alt="meal image">
+      </div>
+   </div>
+   <div class="col-xs-12 col-md-8">
+      <div class="content">
+         <h2 class="meal-name">{{mealName}}</h2>
+         <span class="price-pill">₦{{price}}</span>
+         <p class="meal-description">
+              {{description}}
+         </p>
+         <div class="row">
+            <div class="col-md-9">
+               Preparation time : {{preparationTime}} min
+            </div>
+            <div class="col-md-3">
+               <button class="btn order-meal-btn float-right" (click)="openModal(template,mealName,price,mealId)">Order Meal</button>
+            </div>
+         </div>
+      </div>
+   </div>
+ </div>
+</div>
+
+
+
+<ng-template #template>
+   <div class="modal-header">
+     <h4 class="modal-title pull-left">Order Your Meal</h4>
+     <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+       <span aria-hidden="true">&times;</span>
+     </button>
+   </div>
+   <div class="modal-body">
+      <h3>Name : {{selectedMealName}}</h3>
+      <h3>Price : ₦{{selectedMealPrice}} </h3>
+   
+     <div class="form-group">
+      <label for="exampleInputEmail1">Enter your email to make your order</label>
+      <input type="email" required name="email"  class="form-control" id="exampleInputEmail1" aria-describedby="email"  #customerEmail>
+      <button type="button" class="btn btn-success btn-lg btn-block order-now-btn" 
+      (click)="makeOrder(customerEmail.value)">Order Now</button>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+   </div>
+ </ng-template>
