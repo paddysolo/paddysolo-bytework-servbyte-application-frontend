@@ -1,3 +1,10 @@
+# How to run
+
+1. Clone this repository to your local system
+2. Navigate to where the project is located, using CMD 
+3. run the command -- npm install   (this will download the necessary dependecies)
+4. run the command -- ng serve  (this will run the application : make sure the backend is up and running aswell)
+
 # Servebytewebapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
